@@ -77,7 +77,7 @@ export default function SearchExercises() {
         </Button>
       </Box>
 
-      <Box sx={{ position: "relative", width: "85%", p: "20px" }}>
+      <Box sx={{ position: "relative", width: "100%" }}>
         <HorizontalScrollbar />
       </Box>
     </Stack>

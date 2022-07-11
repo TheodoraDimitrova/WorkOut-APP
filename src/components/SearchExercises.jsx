@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Box, Stack, Typography, Button, TextField } from "@mui/material";
 
 import HorizontalScrollbar from "./HorizontalScrollbar";

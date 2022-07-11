@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { youTubeOptions } from "../utils/options_fetch";
 import axios from "axios";
 import { Box } from "@mui/material";
@@ -8,7 +7,7 @@ import ExerciseVideos from "../components/ExerciseVideos ";
 import ExercisesContext from "../context/ExercisesContext";
 
 export default function ExerciseDetail() {
-  const { id } = useParams();
+ 
   const [exerciseVideos, setExerciseVideos] = useState([]);
   const { exercise } = useContext(ExercisesContext);
 
@@ -20,6 +19,7 @@ export default function ExerciseDetail() {
       return res.data;
     };
     getVideos();
+       //eslint-disable-next-line
   }, []);
 
   return (

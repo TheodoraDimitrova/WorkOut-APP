@@ -11,7 +11,7 @@ const breakPoints = [
 ];
 
 const HorizontalScrollbar = () => {
-  const [categories, setCategories] = useState([
+  const [categories] = useState([
     "back",
     "cardio",
     "chest",

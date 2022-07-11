@@ -2,7 +2,7 @@ import React ,{useContext}from "react";
 import { Stack, Typography } from "@mui/material";
 import { IoFitnessSharp } from "react-icons/io5";
 import ExercisesContext from "../context/ExercisesContext";
-import {searchExercises} from '../context/ExerciseActions'
+
 
 export default function ScrollbarCard({ item }) {
   const { dispatch ,bodyPart } = useContext(ExercisesContext);

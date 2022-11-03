@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import SearchExercises from "../components/SearchExercises";
 import Exercises from "../components/Exercises";

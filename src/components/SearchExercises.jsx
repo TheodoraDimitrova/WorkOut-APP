@@ -10,11 +10,12 @@ export default function SearchExercises() {
   const [inputSearch, setInputSearch] = useState("");
 
   const HandleSearch = async () => {
-    dispatch({ type: "SET_BODY_PART", payload: inputSearch })
+    dispatch({ type: "SET_BODY_PART", payload: inputSearch });
     if (inputSearch) {
       let res = exercises.filter(
-        (x => x.bodyPart.includes(inputSearch) || x.name.includes(inputSearch))
+        (x) => x.bodyPart.includes(inputSearch) || x.name.includes(inputSearch)
       );
+
       dispatch({ type: "SEARCH_EXERCISES", payload: res });
       setInputSearch("");
     }
